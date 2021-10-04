@@ -43,16 +43,16 @@
     <span id="menuDiv" class="headlinkContainer" style="display: none;">
       <a class="headlinkSite" href="https://github.com/kadena-io/pact">
         <div>Pact GitHub</div>
-        <img src="/img/github_icon.svg" alt=""></img>
+        <img src="img/github_icon.svg" alt=""></img>
 
       </a>
       <a class="headlinkSite" href="https://pactlang.org/beginner/welcome-to-pact/">
         <div>Pact Quickstart</div>
-        <img src="/img/github_icon.svg" alt=""></img>
+        <img src="img/github_icon.svg" alt=""></img>
       </a>
       <a class="headlinkSite" href="https://discord.io/kadena">
         <div>Kadena Discord</div>
-        <img src="/img/discord_icon.svg" alt=""></img>
+        <img src="img/discord_icon.svg" alt=""></img>
       </a>
     </span>
   </nav>
@@ -61,7 +61,8 @@
     <h1>What is Kadena?</h1> 
     <br>
     <span>
-      Kadena is a smart contract Layer1 much like Ethereum, with the difference that it's the only chain capable of handling all the world's needs while staying scalable, secure and decentralized. <br>
+      Kadena is a smart contract Layer1 much like Ethereum, with the difference that it's the only chain capable of handling all the world's needs while staying scalable, secure and decentralized.
+      <br><br>
       Other blockchains like Solana, ETH2, Avax, etc. try to scale using new consensus models like Proof of Stake (PoS) or by integrating the protocol with off-chain networks and processes (payment channels, side chains). The problem with those approaches is that they degrade the assurance, censorship resistance, and trustless nature of the original PoW design. Traditional Proof of Work (PoW) as demonstrated in the Bitcoin network is a masterstroke of design and the only way to create a truly trustless public network. See PoS has several problems, the biggest are that it's a pay-to-play reputation engine which favors the richest stakers, because staking and PoS is very good for large VCs that want to control what supposed to be a decentralized system. The others being that there is no way to make decentralized state sharding work, something which is needed if you want to scale way past 500k tp/s <br><br>
       But don't forget about Pact, the contract language that runs on top off Kadena's stack. It's an unparalleled advancement in safety and security, and is likely the only tech that can move DeFi beyond the products it's developed so far. By allowing smart contracts to really interact with one another on an L1 network that scales, something previously thought impossible we are finally reaching the true potential of cryptocurrencies. The inherent flaws of EVM/Solidity have been exposed through exploits which Pacts security features make impossible and because the code is so easily readable it can be verified by legal departments who aren't programmers.
 
@@ -86,7 +87,7 @@
   </div>
 
   <div class="headline">
-    <span class="bigText">6 out of 7 projects <span id="underline">REKT</span> in the last 5 weeks.
+    <span class="bigText">6 out of 7 projects <a href="https://rekt.news/">REKT</a> in the last 5 weeks.
     <br>
     <span id="finalAmountDisplay" class="bigText2"></span>
     <br>
@@ -140,17 +141,17 @@
 
   <footer>
       <div class="alignText">
-        <img src="/img/github_icon.svg" alt=""></img>
+        <img src="img/github_icon.svg" alt=""></img>
         <a href="https://github.com/kadena-io/pact">Pact GitHub</a>
       </div>
 
       <div class="alignText">
-        <img src="/img/github_icon.svg" alt=""></img>
+        <img src="img/github_icon.svg" alt=""></img>
         <a href="https://pactlang.org/beginner/welcome-to-pact/">Pact Quickstart</a>
       </div>
 
       <div class="alignText">
-        <img src="/img/discord_icon.svg" alt=""></img>
+        <img src="img/discord_icon.svg" alt=""></img>
         <a href="https://discord.io/kadena">Kadena Discord</a>
       </div>
   </footer>
@@ -164,7 +165,7 @@
 
   $.ajax({
     method: 'GET',
-    url: '/rekt.json',
+    url: '  rekt.json',
     success: function (rektList) {
       buildTable(rektList)
       console.log(rektList)
@@ -186,7 +187,7 @@
 
       const nameCell = document.createElement("td");
       const nameImage = document.createElement("img");
-      nameImage.src = `/img/projects/${data[i].name}.svg`;
+      nameImage.src = `img/projects/${data[i].name}.svg`;
       const nameValue = document.createTextNode(data[i].name);
       nameCell.appendChild(nameImage);
       nameCell.appendChild(nameValue);
