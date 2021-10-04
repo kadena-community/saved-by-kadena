@@ -87,11 +87,11 @@
   </div>
 
   <div class="headline">
-    <span class="bigText">6 out of 7 projects <a href="https://rekt.news/">REKT</a> in the last 5 weeks.
+    <span class="bigText">6 out of 7 projects <a target="_blank" href="https://rekt.news/">REKT</a> in the last 5 weeks.
     <br>
     <span id="finalAmountDisplay" class="bigText2"></span>
     <br>
-    could have been saved by Kadena.</span>
+    could have been saved by <a target="_blank" href="https://www.kadena.io/">Kadena</a>.</span>
     <span class="bigText1 darkText ">Ask your favorite DeFi project why they're not building on Kadena.</span>
     <a href="#projects">
       View Projects
@@ -189,8 +189,11 @@
       const nameImage = document.createElement("img");
       nameImage.src = `img/projects/${data[i].name}.svg`;
       const nameValue = document.createTextNode(data[i].name);
-      nameCell.appendChild(nameImage);
-      nameCell.appendChild(nameValue);
+      const nameLink = document.createElement("a");
+      nameLink.href = 'https://rekt.news' + data[i].url;
+      nameCell.appendChild(nameLink);
+      nameLink.appendChild(nameImage);
+      nameLink.appendChild(nameValue);
 
       const dateCell = document.createElement("td");
       const dateValue = document.createTextNode(data[i].date);
