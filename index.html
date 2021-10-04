@@ -190,6 +190,7 @@
       nameImage.src = `img/projects/${data[i].name}.svg`;
       const nameValue = document.createTextNode(data[i].name);
       const nameLink = document.createElement("a");
+      nameLink.target = '_blank';
       nameLink.href = 'https://rekt.news' + data[i].url;
       nameCell.appendChild(nameLink);
       nameLink.appendChild(nameImage);
