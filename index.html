@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>savedby Kadena</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="Build safe and scalable dapps with Pact">
+  <meta property="og:title" content="savedbyKadena">
+  <meta property="og:description" content="Build safe and scalable dapps on Kadena with Pact">
+  <meta property="og:image" content="https://i.imgur.com/udzRFhH.png">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://savedbykadena.netlify.app">
+
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+  <!-- <link rel="manifest" href="/my.webmanifest"> -->
+  <meta name="theme-color" content="#000">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+  <nav>
+    <span class="darkText">savedby<span
+        style="font-weight: bolder; color: white; font-size: 1.2rem;">Kadena</span></span>
+    <a class="infoButton" onclick="display_infoKadena()">What is Kadena?</a>
+    <a class="infoButton" onclick="display_infoPact()">What is Pact?</a>
+    <a class="infoButton" onclick="display_link()">Links  
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </a>
+
+    <span id="menuDiv" class="headlinkContainer" style="display: none;">
+      <a class="headlinkSite" href="https://github.com/kadena-io/pact">
+        <div>Pact GitHub</div>
+        <img src="/img/github_icon.svg" alt=""></img>
+
+      </a>
+      <a class="headlinkSite" href="https://pactlang.org/beginner/welcome-to-pact/">
+        <div>Pact Quickstart</div>
+        <img src="/img/github_icon.svg" alt=""></img>
+      </a>
+      <a class="headlinkSite" href="https://discord.io/kadena">
+        <div>Kadena Discord</div>
+        <img src="/img/discord_icon.svg" alt=""></img>
+      </a>
+    </span>
+  </nav>
+
+  <div class="panel" id="infoKadena">
+    <h1>What is Kadena?</h1> 
+    <br>
+    <span>
+      Kadena is a smart contract Layer1 much like Ethereum, with the difference that it's the only chain capable of handling all the world's needs while staying scalable, secure and decentralized. <br>
+      Other blockchains like Solana, ETH2, Avax, etc. try to scale using new consensus models like Proof of Stake (PoS) or by integrating the protocol with off-chain networks and processes (payment channels, side chains). The problem with those approaches is that they degrade the assurance, censorship resistance, and trustless nature of the original PoW design. Traditional Proof of Work (PoW) as demonstrated in the Bitcoin network is a masterstroke of design and the only way to create a truly trustless public network. See PoS has several problems, the biggest are that it's a pay-to-play reputation engine which favors the richest stakers, because staking and PoS is very good for large VCs that want to control what supposed to be a decentralized system. The others being that there is no way to make decentralized state sharding work, something which is needed if you want to scale way past 500k tp/s <br><br>
+      But don't forget about Pact, the contract language that runs on top off Kadena's stack. It's an unparalleled advancement in safety and security, and is likely the only tech that can move DeFi beyond the products it's developed so far. By allowing smart contracts to really interact with one another on an L1 network that scales, something previously thought impossible we are finally reaching the true potential of cryptocurrencies. The inherent flaws of EVM/Solidity have been exposed through exploits which Pacts security features make impossible and because the code is so easily readable it can be verified by legal departments who aren't programmers.
+
+    </span>
+  </div>
+
+  <div class="panel" id="infoPact">
+    <h1>What is Pact?</h1> 
+    <br>
+    <span>
+      Pact is a human-readable smart contract language which was designed from the ground up specifically for the needs of decentralized finance.
+      <br><br>
+      It's so easy to read and write that a technical lawyer can reliably program his smart contracts with a little practice just like he could learn to manipulate data in Excel, formal verification which is invaluable when you are dealing with critical systems i.e. those that handle a lot of money or play a key part in infrastructure, Turing incomplete (prohibits recursive function calls, unbounded looping and variable reassignment which eliminates the potential for exploits that have ravaged EVM languages by design), upgradeable contracts whereas Solidity contracts are final and require proxy contracts etc. It's a next gen smart contract language that improves upon Solidity much like Chainweb is a next gen blockchain that improves upon its POW predecessors.
+      <br><br>
+      Pact smart contracts can be autonomous/non-upgradable if the devs choose. Remember btw that every major smart contract on ethereum now uses a proxy to rug pull at will. In the end you have to DYOR which means checking contract governance. Autonomous is great, until a bug or hack steals all your coins. Upgradeable is great but you should understand that governance before you buy in. There's no free lunch. With Pact you can always check the governance code yourself - and you should.
+      <br><br>
+      Not only is it an unparalleled advancement in safety and security, it's likely the only tech that can move DeFi beyond the products it's developed so far.
+
+
+
+    </span>
+  </div>
+
+  <div class="headline">
+    <span class="bigText">6 out of 7 projects <span id="underline">REKT</span> in the last 5 weeks.
+    <br>
+    <span id="finalAmountDisplay" class="bigText2"></span>
+    <br>
+    could have been saved by Kadena.</span>
+    <span class="bigText1 darkText ">Ask your favorite DeFi project why they're not building on Kadena.</span>
+    <a href="#projects">
+      View Projects
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-arrow-down-right">
+        <line x1="7" y1="7" x2="17" y2="17"></line>
+        <polyline points="17 7 17 17 7 17"></polyline>
+      </svg>
+    </a>
+  </div>
+
+  <table id="projects">
+    <tr class="tableHeader">
+      <th class="columnheader">Project</th>
+      <th class="columnheader">REKT Date</th>
+      <th class="columnheader">Amount Lost</th>
+      <th class="columnheader">
+        <div class="remedy">
+          Remedy
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="gray"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </div>
+      </th>
+    </tr>
+    <tbody id="projectTable">
+    </tbody>
+  </table>
+
+  <!-- <div class="tagExplainerHolder">
+      <span class="tagExplainer">Pact</span>
+      <span class="darkText">The Pact language by itself with no special coding practices would have prevented this project from getting rekt.</span>
+
+      <span class="tagExplainer">FV</span>
+      <span class="darkText">Pact's Formal Verification capabilities provide a straightforward way to prevent this project from getting rekt.  And if the developers didn't take advantage of this, there is no chance competent auditors would have missed it.</span>
+
+      <span class="tagExplainer">ScalablePOW</span>
+      <span class="darkText">When gas prices are high because of lack of scalability, developers will write less safe code just to decrease transaction fees.</span>
+
+      <span class="tagExplainer">Chainweaver</span>
+      <span class="darkText">When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.</span>
+  </div> -->
+
+  <footer>
+      <div class="alignText">
+        <img src="/img/github_icon.svg" alt=""></img>
+        <a href="https://github.com/kadena-io/pact">Pact GitHub</a>
+      </div>
+
+      <div class="alignText">
+        <img src="/img/github_icon.svg" alt=""></img>
+        <a href="https://pactlang.org/beginner/welcome-to-pact/">Pact Quickstart</a>
+      </div>
+
+      <div class="alignText">
+        <img src="/img/discord_icon.svg" alt=""></img>
+        <a href="https://discord.io/kadena">Kadena Discord</a>
+      </div>
+  </footer>
+
+</body>
+
+<script>
+
+  var rektList = [];
+  var finalAmount = 0;
+
+  $.ajax({
+    method: 'GET',
+    url: '/rekt.json',
+    success: function (rektList) {
+      buildTable(rektList)
+      console.log(rektList)
+    }
+  })
+
+  const pactDesc = "The Pact language by itself with no special coding practices would have prevented this project from getting rekt.";
+  const fvDesc = "Pact's Formal Verification capabilities provide a straightforward way to prevent this project from getting rekt.  And if the developers didn't take advantage of this, there is no chance competent auditors would have missed it.";
+  const spowDesc = "When gas prices are high because of lack of scalability, developers will write less safe code just to decrease transaction fees.";
+  const chainweaverDesc = "When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.";
+
+  function buildTable(data) {
+    var table = document.getElementById('projectTable')
+
+    for (let i = 0; i < data.length; i++) {
+      if (!data[i].remedies) { continue; }
+
+      const row = document.createElement("tr");
+
+      const nameCell = document.createElement("td");
+      const nameImage = document.createElement("img");
+      nameImage.src = `/img/projects/${data[i].name}.svg`;
+      const nameValue = document.createTextNode(data[i].name);
+      nameCell.appendChild(nameImage);
+      nameCell.appendChild(nameValue);
+
+      const dateCell = document.createElement("td");
+      const dateValue = document.createTextNode(data[i].date);
+      dateCell.append(dateValue);
+
+      const amountCell = document.createElement("td");
+      const amountValue = document.createTextNode(`$ ${data[i].amount.toLocaleString("en-US")}`);
+      finalAmount = finalAmount + data[i].amount;
+      amountCell.appendChild(amountValue);
+
+      const remedieAmounts = Array.isArray(data[i].remedies) ? data[i].remedies : [data[i].remedies];
+      const remediesCell = document.createElement("td");
+      for (const remediesTag of remedieAmounts) {
+        const remediesSpan = document.createElement("span");
+        const remediesValue = document.createTextNode(remediesTag);
+        remediesCell.append(remediesSpan);
+        remediesSpan.append(remediesValue);
+
+        if (remediesTag == "Pact")
+         var remediedDesc = remediesSpan.setAttribute("title", pactDesc);
+        else if (remediesTag == "FV")
+        var remediedDesc = remediesSpan.setAttribute("title", fvDesc);
+        else if (remediesTag == "ScalablePOW")
+        var remediedDesc = remediesSpan.setAttribute("title", spowDesc);
+        else if (remediesTag == "Chainweaver")
+        var remediedDesc = remediesSpan.setAttribute("title", chainweaverDesc);
+      }
+
+      row.appendChild(nameCell)
+      row.appendChild(dateCell);
+      row.appendChild(amountCell)
+      row.appendChild(remediesCell);
+
+      table.appendChild(row);
+    }
+
+    document.getElementById("finalAmountDisplay").innerHTML = "$" + finalAmount.toLocaleString("en-US");
+
+  }
+
+</script>
+
+<script>
+
+  function display_infoKadena() {
+    var panel = document.getElementById("infoKadena");
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.padding = "0 10vw 0 10vw";
+      
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.padding = "2rem 10vw 2rem 10vw";
+    }
+  }
+
+  function display_infoPact() {
+    var panel = document.getElementById("infoPact");
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.padding = "0 10vw 0 10vw";
+      
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.padding = "2rem 10vw 2rem 10vw";
+    }
+  }
+
+  function display_link() {
+    var menuD = document.getElementById("menuDiv");
+    if (menuD.style.display === "none") {
+      menuD.style.display = "block";
+    } else {
+      menuD.style.display = "none";
+    }
+  }
+
+  var mouse_is_inside = false;
+  $(document).ready(function()
+  {
+      $('.infoButton').hover(function(){ 
+          mouse_is_inside=true; 
+      }, function(){ 
+          mouse_is_inside=false; 
+      });
+
+      $("body").mouseup(function(){ 
+          if(! mouse_is_inside) $('.headlinkContainer').hide();
+      });
+  });
+
+  (function() {
+  "use strict";
+
+  var tooltipDelay = 500;
+  var timer = null;
+
+  document.body.addEventListener("mouseout", function() {
+    window.clearTimeout(timer);
+  });
+
+  document.body.addEventListener("mousemove", function(e) {
+    var el = e.target;
+
+    if (el != document.body && (el.hasAttribute("title") || el.hasAttribute("data-styletip"))) {
+      if (el.title) {
+        el["tt-title"] = el.title;
+        el["tt-show"] = function(pos) {
+          var tip = document.createElement("div");
+          tip.classList.add("style-tip");
+          
+          if (el.hasAttribute("data-styletip-class")) {
+            tip.classList.add(el.getAttribute("data-styletip-class"));
+          }
+          
+          tip.innerText = el["tt-title"];
+          tip.style.zIndex = 9e9;
+          tip.style.pointerEvents = "none";
+          tip.style.position = "absolute";
+          tip.style.left = "70%";
+          tip.style.top = pos.y + "px";
+          tip.style.margin = "1rem 3rem";
+          
+          document.body.appendChild(tip);
+          
+          el["tt-tip"] = tip;
+          this.addEventListener("mouseout", el["tt-destroy"]);
+        };
+        
+        el["tt-destroy"] = function() {
+          if (el["tt-tip"]) {
+            document.body.removeChild(el["tt-tip"]);
+            delete el["tt-tip"];
+          }
+        };
+        
+        el.removeAttribute("title");
+        el.setAttribute("data-styletip", true);
+      }
+
+      clearTimeout(timer);
+      timer = window.setTimeout(function() {
+        el["tt-destroy"]();
+        el["tt-show"]({
+          x: e.pageX,
+          y: e.pageY
+        });
+      }, tooltipDelay);
+    }
+  });
+  })();
+</script>
+
+</html>

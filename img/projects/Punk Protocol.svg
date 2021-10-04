@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_128" data-name="Rectangle 128" width="23.362" height="14.867" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff154c"/>
+      <stop offset="0.492" stop-color="#5629e5"/>
+      <stop offset="1" stop-color="#18e5ff"/>
+    </linearGradient>
+  </defs>
+  <g id="punk_logo" transform="translate(-88.007 -999.684)">
+    <g id="Group_687" data-name="Group 687" transform="translate(87.58 999.684)">
+      <g id="Group_621" data-name="Group 621">
+        <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0.427)" stroke="#1a1a1a" stroke-width="1">
+          <circle cx="28" cy="28" r="28" stroke="none"/>
+          <circle cx="28" cy="28" r="27.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_688" data-name="Group 688" transform="translate(1455.048 12112.522)">
+      <g id="Symbols" transform="translate(-1351.062 -11092.272)">
+        <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <g id="bar-_-header-landing" data-name="bar-/-header-landing" transform="translate(-1.054 -0.45)">
+            <g id="GNB">
+              <g id="LOGO">
+                <g id="Punk" transform="translate(31.534 0.946)">
+                  <path id="Path_30" data-name="Path 30" d="M56.1,15.908v-4.1h8.2V9.759h2.05V3.61H64.3V1.56H52V15.908Zm6.149-6.149H56.1V3.61h6.149Zm21.181,6.149V5.659h-4.1v8.2H73.18v-8.2h-4.1v8.2h2.05v2.05Zm6.832,0v-8.2H96.41v8.2h4.1v-8.2H98.46V5.659h-12.3V15.908Zm17.081,0v-4.1h4.1v2.05h2.05v2.05h4.1v-2.05h-2.05v-2.05h-2.05V9.759h2.05V7.709h2.05V5.659h-4.1v2.05h-2.05v2.05h-4.1V1.56h-4.1V15.908Z" transform="translate(-52 -1.56)"/>
+                  <path id="Path_31" data-name="Path 31" d="M56.1,15.908v-4.1h8.2V9.759h2.05V3.61H64.3V1.56H52V15.908Zm6.149-6.149H56.1V3.61h6.149Zm21.181,6.149V5.659h-4.1v8.2H73.18v-8.2h-4.1v8.2h2.05v2.05Zm6.832,0v-8.2H96.41v8.2h4.1v-8.2H98.46V5.659h-12.3V15.908Zm17.081,0v-4.1h4.1v2.05h2.05v2.05h4.1v-2.05h-2.05v-2.05h-2.05V9.759h2.05V7.709h2.05V5.659h-4.1v2.05h-2.05v2.05h-4.1V1.56h-4.1V15.908Z" transform="translate(-52 -1.56)" fill="#fff"/>
+                </g>
+                <g id="Group_634" data-name="Group 634">
+                  <rect id="Bounds" width="25.227" height="15.767" fill="none"/>
+                  <path id="Path" d="M14.38,6.507a.315.315,0,0,0,.535-.226v-4.5a.631.631,0,0,1,1.069-.453l8.734,8.461a.946.946,0,0,1,.288.679V14.89a.631.631,0,0,1-1.069.453L18.6,10.178a.315.315,0,0,0-.535.227V14.89A.631.631,0,0,1,17,15.343l-5.333-5.164a.315.315,0,0,0-.535.227v4.484a.631.631,0,0,1-1.069.453L1.468,7.018A1.713,1.713,0,0,1,1.182,6.7a.824.824,0,0,1-.111-.262,1.712,1.712,0,0,1-.032-.429V1.785a.631.631,0,0,1,1.07-.453L7.451,6.506a.315.315,0,0,0,.535-.227l-.006-4.49a.631.631,0,0,1,1.07-.454Z" transform="translate(-0.409 -0.454)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="19.115" cy="19.115" r="19.115" transform="translate(-1358.573 -11103.953)" fill="#fff" style="mix-blend-mode: saturation;isolation: isolate"/>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="19.115" cy="19.115" r="19.115" transform="translate(-1357.511 -11103.953)" fill="#fff" style="mix-blend-mode: overlay;isolation: isolate"/>
+    </g>
+  </g>
+</svg>
