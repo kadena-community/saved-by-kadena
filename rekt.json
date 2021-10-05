@@ -1,5 +1,59 @@
 [
     {
+        "amount": null,
+        "audit": null,
+        "url": "/compound-rekt/",
+        "date": "2021-10-04",
+        "remedies": null,
+        "name": "Compound",
+        "excerpt": "Itâs worse than we thought. Last week ~$80M in excess COMP was wrongly distributed. Now another ~$68.8M has been sent to the vulnerable vault, and even more COMP is being given away.",
+        "tags": [
+            "Compound",
+            "REKT"
+        ]
+    },
+    {
+        "amount": null,
+        "audit": null,
+        "url": "/veefinance-rekt/",
+        "date": "2021-09-21",
+        "remedies": null,
+        "name": "Vee Finance",
+        "excerpt": "Top ten thievery. $34 million taken from Vee Finance earns them the number 7 spot on our leaderboard, yet nobody seems surprised. Whatâs normal for us is not normal elsewhere.",
+        "tags": [
+            "Vee Finance",
+            "REKT"
+        ]
+    },
+    {
+        "amount": null,
+        "audit": null,
+        "url": "/jaypegs-automart-rekt/",
+        "date": "2021-09-18",
+        "remedies": null,
+        "name": "JayPegs Automart",
+        "excerpt": "A blue-chip rekt by a front-end attack. Remind us, which part of crypto is supposed to be âtrustlessâ? Misplaced faith (temporarily) cost MISO $3.1 million.",
+        "tags": [
+            "NFT",
+            "Sushi",
+            "JayPeg",
+            "REKT"
+        ]
+    },
+    {
+        "amount": null,
+        "audit": null,
+        "url": "/daomaker-rekt/",
+        "date": "2021-09-06",
+        "remedies": null,
+        "name": "DAO Maker",
+        "excerpt": "DAO Maker meet their maker. Again. $4M lost, less than a month after losing $7M. If you get rekt on repeat then we have to say something...",
+        "tags": [
+            "DAO Maker",
+            "REKT"
+        ]
+    },
+    {
         "amount": 18800000,
         "audit": "Unaudited",
         "url": "/cream-rekt/",
