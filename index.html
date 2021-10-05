@@ -87,7 +87,7 @@
   </div>
 
   <div class="headline">
-    <span class="bigText">6 out of 7 projects <a target="_blank" href="https://rekt.news/">REKT</a> in the last 5 weeks.
+    <span class="bigText"><span id="goodCount"/> out of <span id="totalCount"/> projects <a target="_blank" href="https://rekt.news/">REKT</a> in the last 5 weeks.
     <br>
     <span id="finalAmountDisplay" class="bigText2"></span>
     <br>
@@ -178,6 +178,16 @@
   const chainweaverDesc = "When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.";
 
   function buildTable(data) {
+    var goodCount = 0;
+    for (let i = 0; i < data.length; i++) {
+      if (!data[i].remedies) { continue; }
+      goodCount++;
+    }
+    var good = document.getElementById('goodCount')
+    good.appendChild(document.createTextNode(goodCount);
+    var total = document.getElementById('totalCount')
+    total.appendChild(document.createTextNode(data.length);
+
     var table = document.getElementById('projectTable')
 
     for (let i = 0; i < data.length; i++) {
