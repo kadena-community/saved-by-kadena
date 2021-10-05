@@ -1,11 +1,13 @@
 [
     {
-        "url": "/cream-rekt/",
-        "date": "2021-08-30",
-        "remedies": ["Pact"],
-        "name": "Cream Finance",
         "amount": 18800000,
         "audit": "Unaudited",
+        "url": "/cream-rekt/",
+        "date": "2021-08-30",
+        "remedies": [
+            "Pact"
+        ],
+        "name": "Cream Finance",
         "excerpt": "Inspector rekt back once again. $18.8M lost to a ghostface killer, this time from an old school DeFi protocol.",
         "tags": [
             "Cream",
@@ -13,12 +15,14 @@
         ]
     },
     {
-        "url": "/xtoken-rekt-x2/",
-        "date": "2021-08-30",
-        "remedies": ["Pact"],
-        "name": "X-Token",
         "amount": 4500000,
         "audit": "Unaudited",
+        "url": "/xtoken-rekt-x2/",
+        "date": "2021-08-30",
+        "remedies": [
+            "Pact"
+        ],
+        "name": "X-Token",
         "excerpt": "X-token X2 - The X-ploiter Returns. $4.5 million taken from their xSNX contract. A sequel normally leads to a series. Will the X-ploiters try for a trilogy?",
         "tags": [
             "X-Token",
@@ -26,12 +30,15 @@
         ]
     },
     {
-        "url": "/punkprotocol-rekt/",
-        "date": "2021-08-13",
-        "remedies": ["Pact", "FV"],
-        "name": "Punk Protocol",
         "amount": 8950000,
         "audit": "Unaudited",
+        "url": "/punkprotocol-rekt/",
+        "date": "2021-08-13",
+        "remedies": [
+            "Pact",
+            "FV"
+        ],
+        "name": "Punk Protocol",
         "excerpt": "Punk is dead. On Aug 10th, Punk Protocol was hacked for $8.95M, ~$5M of which was later returned.",
         "tags": [
             "Punk Protocol",
@@ -39,12 +46,14 @@
         ]
     },
     {
-        "url": "/polynetwork-rekt/",
-        "date": "2021-08-11",
-        "remedies": ["Pact"],
-        "name": "Poly Network",
         "amount": 611000000,
         "audit": "Unaudited",
+        "url": "/polynetwork-rekt/",
+        "date": "2021-08-11",
+        "remedies": [
+            "Pact"
+        ],
+        "name": "Poly Network",
         "excerpt": "This is it rekt readers; the big one. $611M stolen from Poly Network, but has the hacker had a change of heart? They're returning the money bit by bit.",
         "tags": [
             "Poly Network",
@@ -53,12 +62,12 @@
         "analysis": ["https://twitter.com/SirLensALot/status/1425558889261588487"]
     },
     {
+        "amount": 1500000,
+        "audit": "Unaudited",
         "url": "/levyathan-rekt/",
         "date": "2021-08-05",
         "remedies": null,
         "name": "Levyathan",
-        "amount": 1500000,
-        "audit": "Unaudited",
         "excerpt": "Levyathan Finance sank last week, along with its TVL of $1.5M. Basic errors lead to total destruction. Bad intentions or just raw incompetence? You decide.",
         "tags": [
             "Levyathan",
@@ -66,12 +75,14 @@
         ]
     },
     {
-        "url": "/popsicle-rekt/",
-        "date": "2021-08-04",
-        "remedies": ["Pact"],
-        "name": "Popsicle Finance",
         "amount": 20000000,
         "audit": "Peckshield",
+        "url": "/popsicle-rekt/",
+        "date": "2021-08-04",
+        "remedies": [
+            "Pact"
+        ],
+        "name": "Popsicle Finance",
         "excerpt": "Protocol meltdown. ~$20 million gone. A complex hack of a simple bug leaves Popsicle Finance in a sticky situation.",
         "tags": [
             "Popsicle",
@@ -79,12 +90,15 @@
         ]
     },
     {
-        "url": "/thorchain-rekt2/",
-        "date": "2021-07-26",
-        "remedies": ["Pact", "ScalablePOW"],
-        "name": "THORChain",
         "amount": 8000000,
         "audit": "THORChain",
+        "url": "/thorchain-rekt2/",
+        "date": "2021-07-26",
+        "remedies": [
+            "Pact",
+            "ScalablePOW"
+        ],
+        "name": "THORChain",
         "excerpt": "THORChain took a hammering. Recently the protocol was hit for $5M. A second strike saw them lose another $8M. What's next for THOR and their fanatical followers?",
         "tags": [
             "THORChain",
@@ -93,12 +107,12 @@
         "analysis": ["https://twitter.com/SirLensALot/status/1425558889261588487"]
     },
     {
+        "amount": 2400000,
+        "audit": "Unaudited",
         "url": "/pancakebunny2-rekt/",
         "date": "2021-07-18",
         "remedies": null,
         "name": "PancakeBunny",
-        "amount": 2400000,
-        "audit": "Unaudited",
         "excerpt": "Two months ago PancakeBunny got rekt on BSC, now the same thing has happened on Polygon. $2.4 million lost. How earitating.",
         "tags": [
             "PancakeBunny",
@@ -107,12 +121,12 @@
         ]
     },
     {
+        "amount": 5000000,
+        "audit": "Unaudited",
         "url": "/thorchain-rekt/",
         "date": "2021-07-16",
         "remedies": null,
         "name": "THORChain",
-        "amount": 5000000,
-        "audit": "Unaudited",
         "excerpt": "Even the old gods cannot escape the exploits. As the cross-chain attacks continue, THORChain becomes the latest victim. $5 million lost.",
         "tags": [
             "THORChain",
@@ -120,12 +134,12 @@
         ]
     },
     {
+        "amount": 5900000,
+        "audit": "Unaudited",
         "url": "/bondly-rekt/",
         "date": "2021-07-15",
         "remedies": null,
         "name": "Bondly",
-        "amount": 5900000,
-        "audit": "Unaudited",
         "excerpt": "In which Bondly battles the infinite mint. BONDLY token holders are now at a loss, due to an infinite mint exploit in which the attacker made a profit of $5.9 million.",
         "tags": [
             "Bondly",
@@ -133,12 +147,12 @@
         ]
     },
     {
+        "amount": 7900000,
+        "audit": "Unaudited",
         "url": "/anyswap-rekt/",
         "date": "2021-07-13",
         "remedies": null,
         "name": "Anyswap",
-        "amount": 7900000,
-        "audit": "Unaudited",
         "excerpt": "The bridges are burning. Anyswap and Chainswap in 24 hours. They say it's fixed, but can you trust them?",
         "tags": [
             "Anyswap",
@@ -146,12 +160,12 @@
         ]
     },
     {
+        "amount": 4400000,
+        "audit": "Unaudited",
         "url": "/chainswap-rekt/",
         "date": "2021-07-13",
         "remedies": null,
         "name": "ChainSwap",
-        "amount": 4400000,
-        "audit": "Unaudited",
         "excerpt": "As the demand for DeFi increases across chains, the bridges that join them turn into targets themselves. A chain is only as strong as its weakest linkâ¦ Who will break next?",
         "tags": [
             "ChainSwap",
@@ -159,18 +173,16 @@
         ]
     },
     {
+        "amount": 330000,
+        "audit": "Unaudited",
         "url": "/merlin3-rekt/",
         "date": "2021-06-29",
         "remedies": null,
         "name": "Merlin Labs",
-        "amount": 330000,
-        "audit": "Unaudited",
         "excerpt": "The third timeâs a charm for Merlin Finance. Why do people keep going back?",
         "tags": [
             "Merlin Labs",
             "R3KT"
         ]
     }
-
 ]
-
