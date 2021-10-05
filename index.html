@@ -87,7 +87,7 @@
   </div>
 
   <div class="headline">
-    <span class="bigText"><span id="goodCount"/> out of <span id="totalCount"/> projects <a target="_blank" href="https://rekt.news/">REKT</a> in the last 5 weeks.
+    <span class="bigText"><span id="goodCount"></span> out of <span id="totalCount"></span> projects <a target="_blank" href="https://rekt.news/">REKT</a> in the last <span id="timeDelta"></span>.
     <br>
     <span id="finalAmountDisplay" class="bigText2"></span>
     <br>
@@ -111,13 +111,7 @@
       <th class="columnheader">Amount Lost</th>
       <th class="columnheader">
         <div class="remedy">
-          Remedy
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="gray"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <line x1="12" y1="17" x2="12.01" y2="17"></line>
-          </svg>
+          Remedy (click for more info)
         </div>
       </th>
     </tr>
@@ -177,16 +171,53 @@
   const spowDesc = "When gas prices are high because of lack of scalability, developers will write less safe code just to decrease transaction fees.";
   const chainweaverDesc = "When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.";
 
+  function timeSpan(start, end) {
+      const millis = 1000;
+      const minutes = 60 * millis;
+      const hours = 60 * minutes;
+      const days = 24 * hours;
+      const weeks = 7 * days;
+      const months = 30 * days;
+      const years = 365 * days;
+
+      var amount = null;
+      var units = "";
+
+      const delta = end - start;
+      if ( delta < 2 * months ) {
+        amount = Math.round(delta / weeks);
+        units = "weeks";
+      } else if ( delta < 2 * years ) {
+        amount = Math.round(delta / months);
+        units = "months";
+      } else {
+        amount = Math.round(delta / years);
+        units = "years";
+      }
+      return amount + " " + units;
+  }
+
   function buildTable(data) {
     var goodCount = 0;
+    var now = new Date();
+    var oldest = now;
     for (let i = 0; i < data.length; i++) {
-      if (!data[i].remedies) { continue; }
-      goodCount++;
+      if (data[i].remedies) goodCount++;
+
+      var d = Date.parse(data[i].date);
+      if ( d < oldest ) {
+        oldest = d;
+      }
     }
     var good = document.getElementById('goodCount')
     good.appendChild(document.createTextNode(goodCount));
     var total = document.getElementById('totalCount')
     total.appendChild(document.createTextNode(data.length));
+
+    var timeStr = timeSpan(oldest, now);
+    var timeDelta = document.getElementById('timeDelta')
+    timeDelta.appendChild(document.createTextNode(timeStr));
+    
 
     var table = document.getElementById('projectTable')
 
