@@ -109,9 +109,10 @@
       <th class="columnheader">Project</th>
       <th class="columnheader">REKT Date</th>
       <th class="columnheader">Amount Lost</th>
+      <th class="columnheader">Analysis</th>
       <th class="columnheader">
         <div class="remedy">
-          Remedy (click for more info)
+          Remedy (hover for more info)
         </div>
       </th>
     </tr>
@@ -132,6 +133,21 @@
       <span class="tagExplainer">Chainweaver</span>
       <span class="darkText">When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.</span>
   </div> -->
+
+  <section class="legend">
+    <h4>Confidence Legend</h4>
+    <ul>
+      <li>
+        <span class="definite legend-item">Definite</span>
+        Green represents a remedy that definitely would have prevented the hack with no special thought or actions required by the developer.
+      </li>
+
+      <li>
+      <span class="probable legend-item">Probable</span>
+      Yellow represents a remedy that would have very likely prevented the hack, but does require the use of good coding practices by the developer.
+      </li>
+    </ul>
+  </section>
 
   <footer>
       <div class="alignText">
@@ -159,10 +175,9 @@
 
   $.ajax({
     method: 'GET',
-    url: '  rekt.json',
+    url: 'rekt.json',
     success: function (rektList) {
       buildTable(rektList)
-      console.log(rektList)
     }
   })
 
@@ -248,25 +263,46 @@
 
       const remedieAmounts = Array.isArray(data[i].remedies) ? data[i].remedies : [data[i].remedies];
       const remediesCell = document.createElement("td");
-      for (const remediesTag of remedieAmounts) {
+      for (const remediesArr of remedieAmounts) {
+        const remediesTag = remediesArr[0];
         const remediesSpan = document.createElement("span");
         const remediesValue = document.createTextNode(remediesTag);
         remediesCell.append(remediesSpan);
+
+        const remedyConfidence = remediesArr[1];
+        if ( remedyConfidence == 'Definite' ) {
+          remediesSpan.setAttribute('class', 'definite');
+        } else if ( remedyConfidence == 'Probable' ) {
+          remediesSpan.setAttribute('class', 'probable');
+        }
         remediesSpan.append(remediesValue);
 
         if (remediesTag == "Pact")
-         var remediedDesc = remediesSpan.setAttribute("title", pactDesc);
+          var remediedDesc = remediesSpan.setAttribute("title", pactDesc);
         else if (remediesTag == "FV")
-        var remediedDesc = remediesSpan.setAttribute("title", fvDesc);
+          var remediedDesc = remediesSpan.setAttribute("title", fvDesc);
         else if (remediesTag == "ScalablePOW")
-        var remediedDesc = remediesSpan.setAttribute("title", spowDesc);
+          var remediedDesc = remediesSpan.setAttribute("title", spowDesc);
         else if (remediesTag == "Chainweaver")
-        var remediedDesc = remediesSpan.setAttribute("title", chainweaverDesc);
+          var remediedDesc = remediesSpan.setAttribute("title", chainweaverDesc);
+      }
+
+      const analysisCell = document.createElement("td");
+      if ( data[i].analysis ) {
+        for ( let j = 0; j < data[i].analysis.length; j++ ) {
+          const analysisLink = document.createElement("a");
+          analysisLink.href = data[i].analysis;
+          analysisLink.target = "_blank";
+          analysisLink.append(document.createTextNode(j+1));
+          if ( j > 0 ) analysisCell.append(document.createTextNode(' '));
+          analysisCell.append(analysisLink);
+        }
       }
 
       row.appendChild(nameCell)
       row.appendChild(dateCell);
       row.appendChild(amountCell)
+      row.appendChild(analysisCell);
       row.appendChild(remediesCell);
 
       table.appendChild(row);

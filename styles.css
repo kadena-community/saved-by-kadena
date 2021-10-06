@@ -345,3 +345,28 @@ footer {
   }
 }
 
+section {
+    margin: 0 10vw 0 10vw;
+}
+
+.legend-item {
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+}
+
+li {
+    list-style-type: none;
+    line-height: 2.5rem;
+}
+
+h4 {
+    margin-top: 2rem;
+}
+
+.definite {
+    background-color: #009100!important;
+}
+
+.probable {
+    background-color: #919100!important;
+}
