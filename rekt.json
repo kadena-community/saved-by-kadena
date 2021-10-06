@@ -5,7 +5,7 @@
         "url": "/cream-rekt/",
         "date": "2021-08-30",
         "remedies": [
-            "Pact"
+            ["Pact", "Definite"]
         ],
         "name": "Cream Finance",
         "excerpt": "Inspector rekt back once again. $18.8M lost to a ghostface killer, this time from an old school DeFi protocol.",
@@ -20,7 +20,7 @@
         "url": "/xtoken-rekt-x2/",
         "date": "2021-08-30",
         "remedies": [
-            "Pact"
+            ["Pact", "Definite"]
         ],
         "name": "X-Token",
         "excerpt": "X-token X2 - The X-ploiter Returns. $4.5 million taken from their xSNX contract. A sequel normally leads to a series. Will the X-ploiters try for a trilogy?",
@@ -35,8 +35,8 @@
         "url": "/punkprotocol-rekt/",
         "date": "2021-08-13",
         "remedies": [
-            "Pact",
-            "FV"
+            ["Pact", "Definite"],
+            ["FV", "Probable"]
         ],
         "name": "Punk Protocol",
         "excerpt": "Punk is dead. On Aug 10th, Punk Protocol was hacked for $8.95M, ~$5M of which was later returned.",
@@ -51,7 +51,7 @@
         "url": "/polynetwork-rekt/",
         "date": "2021-08-11",
         "remedies": [
-            "Pact"
+            ["Pact", "Definite"]
         ],
         "name": "Poly Network",
         "excerpt": "This is it rekt readers; the big one. $611M stolen from Poly Network, but has the hacker had a change of heart? They're returning the money bit by bit.",
@@ -80,7 +80,7 @@
         "url": "/popsicle-rekt/",
         "date": "2021-08-04",
         "remedies": [
-            "Pact"
+            ["Pact", "Definite"]
         ],
         "name": "Popsicle Finance",
         "excerpt": "Protocol meltdown. ~$20 million gone. A complex hack of a simple bug leaves Popsicle Finance in a sticky situation.",
@@ -95,8 +95,8 @@
         "url": "/thorchain-rekt2/",
         "date": "2021-07-26",
         "remedies": [
-            "Pact",
-            "ScalablePOW"
+            ["Pact", "Definite"],
+            ["ScalablePOW", "Probable"]
         ],
         "name": "THORChain",
         "excerpt": "THORChain took a hammering. Recently the protocol was hit for $5M. A second strike saw them lose another $8M. What's next for THOR and their fanatical followers?",
