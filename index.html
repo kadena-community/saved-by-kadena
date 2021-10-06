@@ -114,7 +114,7 @@
       <th class="columnheader">REKT Date</th>
       <th class="columnheader">Amount Lost</th>
       <th class="columnheader">Analysis</th>
-      <th class="columnheader">
+      <th class="columnheader remedycol">
         <div class="remedy">
           Remedy (hover for more info)
         </div>
@@ -124,33 +124,23 @@
     </tbody>
   </table>
 
-  <!-- <div class="tagExplainerHolder">
-      <span class="tagExplainer">Pact</span>
-      <span class="darkText">The Pact language by itself with no special coding practices would have prevented this project from getting rekt.</span>
-
-      <span class="tagExplainer">FV</span>
-      <span class="darkText">Pact's Formal Verification capabilities provide a straightforward way to prevent this project from getting rekt.  And if the developers didn't take advantage of this, there is no chance competent auditors would have missed it.</span>
-
-      <span class="tagExplainer">ScalablePOW</span>
-      <span class="darkText">When gas prices are high because of lack of scalability, developers will write less safe code just to decrease transaction fees.</span>
-
-      <span class="tagExplainer">Chainweaver</span>
-      <span class="darkText">When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.</span>
-  </div> -->
-
   <section class="legend">
     <h4>Confidence Legend</h4>
-    <ul>
-      <li>
-        <span class="definite legend-item">Definite</span>
-        Green represents a remedy that definitely would have prevented the hack with no special thought or actions required by the developer.
-      </li>
+    <table class="legend-table">
+      <tr>
+        <td class="termcol"><span class="definite legend-item">Definite</span></td>
+        <td>Green represents a remedy that definitely would have prevented the
+        hack with no special thought or actions required by the
+        developer.</td>
+      </tr>
 
-      <li>
-      <span class="probable legend-item">Probable</span>
-      Yellow represents a remedy that would have very likely prevented the hack, but does require the use of good coding practices by the developer.
-      </li>
-    </ul>
+      <tr>
+      <td class="termcol"><span class="probable legend-item">Probable</span></td>
+      <td>Yellow represents a remedy that would have very likely prevented the
+      hack, but does require the use of good coding practices by the
+      developer.</td>
+      </tr>
+    </table>
   </section>
 
   <footer>
@@ -186,7 +176,7 @@
   })
 
   const pactDesc = "The Pact language by itself with no special coding practices would have prevented this project from getting rekt.";
-  const fvDesc = "Pact's Formal Verification capabilities provide a straightforward way to prevent this project from getting rekt.  And if the developers didn't take advantage of this, there is no chance competent auditors would have missed it.";
+  const fvDesc = "Formal Verification in Pact would not only uncover scenarios that would leave this project rekt, it also allows auditors to authoritatively prove that said scenarios are covered in any project.";
   const spowDesc = "When gas prices are high because of lack of scalability, developers will write less safe code just to decrease transaction fees.";
   const chainweaverDesc = "When you put private key material in a place where anyone in the world can see them, no amount of tech can save you.";
 
@@ -271,6 +261,7 @@
         const remediesTag = remediesArr[0];
         const remediesSpan = document.createElement("span");
         const remediesValue = document.createTextNode(remediesTag);
+        remediesCell.setAttribute("class", "remedycol");
         remediesCell.append(remediesSpan);
 
         const remedyConfidence = remediesArr[1];
