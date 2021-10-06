@@ -107,8 +107,8 @@ img {
   margin-right: 0.5rem;
 }
 
-td:last-child,
-th:last-child {
+td.remedycol,
+th.remedycol {
   text-align: end;
 }
 
@@ -377,3 +377,18 @@ h4 {
 .probable {
     background-color: #919100!important;
 }
+
+table.legend-table {
+  margin: 0;
+  border: none;
+}
+
+table.legend-table td {
+  border-bottom: none;
+}
+
+table.legend-table td.termcol {
+  padding-left: 0;
+  padding-right: 0;
+}
+
