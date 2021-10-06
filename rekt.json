@@ -1,16 +1,20 @@
 [
     {
-        "amount": null,
-        "audit": null,
+        "amount": 147000000,
+        "audit": "Unaudited",
         "url": "/compound-rekt/",
         "date": "2021-10-04",
-        "remedies": null,
+        "remedies": [
+            ["Pact", "Probable"],
+            ["ScalablePOW", "Probable"]
+        ],
         "name": "Compound",
         "excerpt": "Itâs worse than we thought. Last week ~$80M in excess COMP was wrongly distributed. Now another ~$68.8M has been sent to the vulnerable vault, and even more COMP is being given away.",
         "tags": [
             "Compound",
             "REKT"
-        ]
+        ],
+        "analysis": ["https://twitter.com/SirLensALot/status/1425558889261588487"]
     },
     {
         "amount": null,
