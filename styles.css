@@ -72,10 +72,13 @@ h3 {
   color: gray;
 }
 
+span.bigText a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
 span a {
   display: inline;
-  text-decoration: underline;
-  text-decoration-style: dotted;
 }
 
 table {
