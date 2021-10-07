@@ -198,11 +198,16 @@ footer {
 
 /* Legend */
 
+.legendHeadline {
+  margin: 1.5rem 10vw 0rem;
+}
+
+
 .tagExplainerHolder {
   margin: 1.5rem 10vw 1.5rem;
   display: grid; 
-  grid-template-columns: auto auto; 
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0fr auto; 
+  grid-template-rows: 1fr 1frr;
   gap: 0.5rem;
   align-items: center;
 }
@@ -305,6 +310,7 @@ footer {
     padding-left: 40%;
   }
 
+
   td:before {
     /* Now like a table header */
     position: absolute;
@@ -333,6 +339,7 @@ footer {
     content: "Project";
     top: 2rem;
     left: 6vw;
+    width: max-content;
   }
   td:nth-of-type(2):before {
     content: "REKT Date";
@@ -345,6 +352,12 @@ footer {
     left: 6vw;
   }
   td:nth-of-type(4):before {
+    content: "Analysis";
+    top: 1rem;
+    left: 6vw;
+    width: max-content;
+  }
+  td:nth-of-type(5):before {
     content: "Remedy";
     top: 1rem;
     left: 6vw;
@@ -371,11 +384,13 @@ h4 {
 }
 
 .definite {
-    background-color: #009100!important;
+    background-color: #2ecc71!important;
+    color: black;
 }
 
 .probable {
-    background-color: #919100!important;
+    background-color: #f1c40f!important;
+    color: black;
 }
 
 table.legend-table {
@@ -391,4 +406,3 @@ table.legend-table td.termcol {
   padding-left: 0;
   padding-right: 0;
 }
-
